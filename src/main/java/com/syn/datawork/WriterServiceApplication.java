@@ -7,8 +7,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 
-
 @SpringBootApplication
+@EnableScheduling
+@EntityScan(basePackages = { "com.syn.datawork.writer.model" })
 public class WriterServiceApplication {
 
 	public static void main(String[] args) {
